@@ -21,12 +21,8 @@ app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-<<<<<<< HEAD
-port = process.env.PORT || 8000;
-
-=======
 var port = process.env.PORT || 8000;
->>>>>>> bf1d545fb8639ece769bfe7b25b652902b0c4a9f
+
 app.listen(port, () => {
   console.log("Listening on port", port);
 });
